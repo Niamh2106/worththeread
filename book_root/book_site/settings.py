@@ -25,12 +25,17 @@ SECRET_KEY = '7crs=+70n+g857mi3@fx4n7cc3idxc^51762pj+-i$=fv(2tvz'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['containers.computing.dcu.ie' ]
+ALLOWED_HOSTS = [
+    'containers.computing.dcu.ie',
+]
 
+USE_X_FORWARDED_HOST = True
+FORCE_SCRIPT_NAME = '/idehenn2'
 
 # Application definition
 
 INSTALLED_APPS = [
+    'pages.apps.PagesConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -76,7 +81,7 @@ WSGI_APPLICATION = 'book_site.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'NAME': BASE_DIR /'db.sqlite3',
     }
 }
 
