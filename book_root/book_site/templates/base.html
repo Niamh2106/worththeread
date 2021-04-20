@@ -1,0 +1,15 @@
+{% load static %}
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+        <title>Basic Site Template</title>
+        <link href="{% static 'main.css' %}" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+		<h1>{{ title }}</h1>
+		{% autoescape off %}
+		<p>{{ content }}</p>
+		{% endautoescape %}
+	</body>
+</html>
