@@ -22,7 +22,7 @@
         -webkit-filter: blur(3px);
         
         /* Full height */
-        height: 100%; 
+        height: 150%; 
         
         /* Center and scale the image nicely */
         background-position: center;
@@ -55,6 +55,7 @@
         .dropbtn {
   background-color:#4d1a00;
   color: white;
+  height: auto;
   padding: 16px;
   font-size: 16px;
   border: none;
@@ -114,7 +115,7 @@
     <button onclick="myFunction()" class="dropbtn">Browse</button>
         <div id="myDropdown" class="dropdown-content">
         <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
-        <a href="#about">Homepage</a>
+        <a href="{% url 'index' %}home">Homepage</a>
         <a href="#blog">Blog</a>
         <a href="#contact">Contact</a>
         <a href="#custom">Custom</a>

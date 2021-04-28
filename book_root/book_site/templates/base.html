@@ -1,15 +1,37 @@
 {% load static %}
 <!doctype html>
-<html>
-	<head>
-		<meta charset="UTF-8">
-        <title>Basic Site Template</title>
-        <link href="{% static 'main.css' %}" rel="stylesheet" type="text/css">
-	</head>
-	<body>
-		<h1>{{ title }}</h1>
-		{% autoescape off %}
-		<p>{{ content }}</p>
-		{% endautoescape %}
-	</body>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta charset="UTF-8"/>
+        <meta name="description" content="Homepage" />
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        
+        <title>
+                {% block title %}
+                {{title}}
+                {% endblock title %}
+        </title>
+
+        <link href="{% static 'main4.css' %}" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+        <ul class="topnav"> 
+                <div class= "active">
+                <li><a href="{% url 'index' %}home">Home</a></li>
+                <li><a href="{% url 'index' %}bloghome">Blog</a></li>
+                <li><a href="{% url 'index' %}contact">Contact Us</a></li>
+                </div>
+        </ul>
+        
+
+        <div class="textbox">
+                {% block main_content %}
+                        <!--Page content goes here-->
+		{% endblock main_content %}
+                    
+        </div>
+
+        <!--<footer>&copy; Copyright 2021</footer>-->
+</body>
 </html>

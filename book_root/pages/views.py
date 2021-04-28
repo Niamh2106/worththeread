@@ -9,8 +9,11 @@ def index(request, pagename = ''):
 	'title':pg.title,
 	'content':pg.bodytext,
     }
-    template ="index.html"
+    template ="index.html" if pagename == "/" else pagename[1:] + ".html"
     return render(request, template, context)
+
+# def home(request):
+#     return render(request, "home.html")
 
 # class SearchResultsView(ListView):
 #     model = Page
