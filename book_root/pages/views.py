@@ -9,6 +9,11 @@ def index(request, pagename = ''):
 	'title':pg.title,
 	'content':pg.bodytext,
     }
-    return render(request, 'base.html', context)
+    template ="index.html"
+    return render(request, template, context)
+
+# class SearchResultsView(ListView):
+#     model = Page
+#     template_name = 'search_results.html'
 
 # Create your views here.
