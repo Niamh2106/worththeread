@@ -7,12 +7,43 @@
 
 
 {% block main_content %}
-
-{% endblock main_content %}
-<div class="card">
-  <img src="img_avatar.png" alt="Avatar" style="width:100%">
-  <div class="container">
-    <h4><b>Half of a Yellow Sun</b></h4>
-    <p>Chimamanda Adichie</p>
+ <div class="card">
+    <a href="{% url 'index' %}yellowsun">
+      <img src="{% static 'yellowsun.jpeg' %}" alt="Half of a Yellow Sun">
+    </a>
   </div>
-</div>
+  <div class="card">
+    <a href="{% url 'index' %}bloodbone">
+      <img src="{% static 'bloodbone.jpg' %}" alt="Half of a Yellow Sun">
+    </a>
+  </div>
+  <div class="card">
+    <a href="{% url 'index' %}americanah">
+      <img src="{% static 'Americanah.jpg' %}" alt="Half of a Yellow Sun">
+    </a>
+  </div>
+  <div class="card">
+    <a href="{% url 'index' %}comingsoon">
+      <img src="{% static 'twows.jpg' %}" alt="The Wolf of Wall Street">
+    </a>
+  </div>
+  <div class="card">
+    <a href="{% url 'index' %}comingsoon">
+      <img src="{% static 'bornacrime.jpg' %}" alt="Half of a Yellow Sun">
+    </a>
+  </div>
+  <div class="card">
+    <a href="{% url 'index' %}comingsoon">
+      <img src="{% static 'hungergames.jpg' %}" alt="The Hunger Games">
+    </a>
+  </div>
+  <div class="card">
+    <a href="{% url 'index' %}comingsoon">
+      <img src="{% static 'undergroundrailroad.jpg' %}" alt="The Underground Railroad">
+    </a>
+  </div>
+<!-- Footer-->
+<!-- <footer class="py-5">
+  <div class="container"><p class="m-0 text-center text-white">Copyright &copy; Niamh Idehen 2021</p></div>
+</footer> -->
+{% endblock main_content %}

@@ -15,6 +15,7 @@ ul.topnav {
   padding: 0;
   overflow: hidden;
   background-color: #f4b183;
+  box-shadow: 0px 2px #993300;
 }
 
 ul.topnav li {float: left;}
@@ -52,3 +53,41 @@ ul.topnav li.right {float: right;}
   margin: 4px 2px;
   cursor: pointer;
 }
+
+.card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgb(0, 0, 0);
+  margin: 20px;
+  width: 180px;
+  height: 270px;
+  transition: 0.3s;
+  overflow:hidden;
+  float: left;
+}
+/* On mouse-over, add a deeper shadow */
+/* .card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.cards-container {
+  column-count: 5;
+}
+
+.cards-container div {
+  box-shadow: 0 4px 8px 0 rgb(0, 0, 0);
+  margin: 20px;
+  width: 180px;
+  height: 270px;
+  transition: 4s;
+  overflow:hidden;
+}
+.cards-container div:first-child {
+  margin: 0;
+} */
+
+img {
+  width:100%;
+  min-height:100%;
+  object-fit: fill;
+}
+
+        

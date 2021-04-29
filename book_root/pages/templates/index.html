@@ -116,11 +116,12 @@
         <div id="myDropdown" class="dropdown-content">
         <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
         <a href="{% url 'index' %}home">Homepage</a>
-        <a href="#blog">Blog</a>
-        <a href="#contact">Contact</a>
-        <a href="#custom">Custom</a>
-        <a href="#support">Support</a>
-        <a href="#tools">Tools</a>
+        <a href="{% url 'index' %}bloghome">Blog</a>
+        <a href="{% url 'index' %}contact">Contact</a>
+        <a href="{% url 'index' %}blogpost">Great Books by Black Authors</a>
+        <a href="{% url 'index' %}yellowsun">Half of a Yelllow Sun</a>
+        <a href="{% url 'index' %}bloodbone">Children of Blood and Bone</a>
+        <a href="https://rb.gy/soyqp4">Bookstores Near Me</a>
       </div>
     </div>
   </div>
