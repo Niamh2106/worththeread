@@ -1,4 +1,4 @@
-<!-- {% extends "base.html" %}
+{% extends "base.html" %}
 {% load static %}
 
 {% block title %}
@@ -7,23 +7,69 @@
 
 
 {% block main_content %}
-<h1>Contact us</h1>
-	{% if submitted %}
-		<p class="success">
-		Your message was submitted successfully. Thank you.
-		</p>
+<style>
+.content {
+	max-width: 500px;
+	margin: auto;
+}
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
 
-	{% else %}
-		<form action="" method="post" novalidate>
-		<table>
-			{{ form.as_table }}
-			<tr>
-				<td>&nbsp;</td>
-				<td><input type="submit" value="Submit"></td>
-			</tr>
-		</table>
-		{% csrf_token %}
-		</form>
-	{% endif %}
+input[type=submit] {
+  background-color: #993300;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
 
-{% endblock main_content %} -->
+input[type=submit]:hover {
+  background-color: #6e2b09;
+}
+
+.container {
+  border-radius: 0px;
+  background-color: #f4b183;
+  outline: 2px solid #6e2b09;
+  box-shadow: 0 4px 8px 0 rgb(0, 0, 0);
+  padding: 15px;
+  padding-top:0%;
+}
+
+</style>
+<body>
+<div class="content">
+	<div class="container">
+	<h1  style="text-align:center">Contact us</h1>
+		{% if submitted %}
+			<p class="success">
+			Your message was submitted successfully. Thank you.
+			</p>
+
+		{% else %}
+		 <div class="wpforms-form">
+			<form action="" method="post" novalidate>
+			<table>
+				{{ form.as_table }}
+				<tr>
+					<td>&nbsp;</td>
+					<td><input type="submit" value="Submit"></td>
+				</tr>
+			</table>
+			{% csrf_token %}
+			</form>
+			</div>
+		{% endif %}
+	</div>
+</div>
+</body>
+{% endblock main_content %}

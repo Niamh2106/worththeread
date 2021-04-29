@@ -7,5 +7,5 @@ urlpatterns = [
     path('', views.index, name='index'),
 ]
 
-#  path('home/', views.home, name='home'),
+
  # path('search/', SearchResultsView.as_view(), name='search_results'),
