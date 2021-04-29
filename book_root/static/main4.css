@@ -3,6 +3,28 @@ li {
 	display: inline;
   }
 
+h1 { 
+  font-weight:normal;
+  position: relative;
+  float: none;
+}
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+h5, .h5 {
+  font-size: 1.25rem;
+}
+h5 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  line-height: 1.8;
+}
 body {
   margin: 0;
   background: #fbe5d6;
@@ -90,4 +112,175 @@ img {
   object-fit: fill;
 }
 
-        
+
+.bookcard {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgb(0, 0, 0);
+  margin: 20px;
+  width: 290px;
+  height: 470px;
+  transition: 0.3s;
+  overflow:hidden;
+  float: left;
+}
+
+.bookinfo {
+  box-shadow: 0 4px 8px 0 rgb(0, 0, 0);
+  margin: 20px;
+  width: 600px;
+  height: 400px;
+  font-size: 17px;
+  background: #f6e6dc;
+  overflow:hidden;
+  position: relative;
+  float: left;
+  padding-right: 15px;
+  padding-left: 15px;
+  outline: 1px solid #993300;
+
+}
+
+.sidecard {
+  position: relative;
+  overflow:hidden;
+  position: relative;
+  float: left;
+  /* display: flex;
+  flex-direction: column; */
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+  padding-left:2px;
+  padding-right:2px;
+  overflow:hidden
+}
+.my-4 {
+  margin-top: 1.5rem !important;
+}
+
+.sidecard > .sidecard-header {
+  border-top: 0;
+}
+.sidecard-header {
+  position: relative;
+  padding: 0.75rem 1.25rem;
+  margin-bottom: 0;
+  background-color: rgba(0, 0, 0, 0.03);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+.sidecard-header:first-child {
+  border-radius: calc(0.25rem - 1px) calc(0.25rem - 1px) 0 0;
+}
+.sidecard-header-tabs {
+  margin-right: -0.625rem;
+  margin-bottom: -0.75rem;
+  margin-left: -0.625rem;
+  border-bottom: 0;
+}
+
+.sidecard-header-pills {
+  margin-right: -0.625rem;
+  margin-left: -0.625rem;
+}
+.card-group > .card:not(:last-child) .sidecard-header {
+  border-top-right-radius: 0;
+}
+.sidecard-body {
+  flex: 1 1 auto;
+  min-height: 1px;
+  padding:0.4rem;
+  padding-right:10px;
+}
+.siderow {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+  
+}
+.siderow-cols-1 > * {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+.siderow-cols-2 > * {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
+.siderow-cols-3 > * {
+  flex: 0 0 33.3333333333%;
+  max-width: 33.3333333333%;
+}
+
+.siderow-cols-4 > * {
+  flex: 0 0 25%;
+  max-width: 25%;
+}
+
+.siderow-cols-5 > * {
+  flex: 0 0 20%;
+  max-width: 20%;
+}
+
+.siderow-cols-6 > * {
+  flex: 0 0 16.6666666667%;
+  max-width: 16.6666666667%;
+}
+
+.col-md-auto, .col-md-4 {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.col-md-4 {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+} 
+
+.topthree{
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+a {
+  color:#2f2a28;
+  text-decoration: none;
+  background-color: transparent;
+}
+a:hover {
+  color:#161514;
+  text-decoration: underline;
+}
+
+a:not([href]):not([class]) {
+  color: inherit;
+  text-decoration: none;
+}
+a:not([href]):not([class]):hover {
+  color: inherit;
+  text-decoration: none;
+}
+
+.list-unstyled {
+  list-style: none;
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  font-style: oblique;
+}
+
+.tinycard{box-shadow: 0 4px 8px 0 rgb(0, 0, 0);
+  margin: 20px;
+  height: 147px;
+  width: 98px;
+  transition: 0.3s;
+  overflow:hidden;
+}

@@ -11,6 +11,8 @@
                 {{title}}
                 {% endblock title %}
         </title>
+        <!-- Favicon--> 
+        <link rel="icon" type="image/x-icon" href="{% static 'favicon.ico' %}"/>
 
         <link href="{% static 'main4.css' %}" rel="stylesheet" type="text/css">
 </head>
@@ -18,7 +20,7 @@
 <body>
         <ul class="topnav">
                 <div class= "active">
-                <li style="font-size:50px; font-family: Georgia, 'Times New Roman', Times, serif;"><a href="{% url 'index' %}home"><b>Worththe</b>Read</a></li>
+                <li style="font-size:50px; font-family: Georgia, 'Times New Roman', Times, serif;"><a href="{% url 'index' %}"><b>Worththe</b>Read</a></li>
                 <li><a href="{% url 'index' %}home">Home</a></li>
                 <li><a href="{% url 'index' %}bloghome">Blog</a></li>
                 <li><a href="{% url 'index' %}contact">Contact Us</a></li>

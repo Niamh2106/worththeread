@@ -11,4 +11,13 @@ class Page(models.Model):
     def __str__(self):
         return self.title
 
+class Comment(models.Model):
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    date = models.DateField(auto_now_add=True)
+    post = models.ForeignKey('Post', on_delete=models.CASCADE)
+    content = models.TextField()
+
+    def __str__(self):
+        return self.user.username
+
 # Create your models here.

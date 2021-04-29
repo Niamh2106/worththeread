@@ -12,9 +12,6 @@ def index(request, pagename = ''):
     template ="index.html" if pagename == "/" else pagename[1:] + ".html"
     return render(request, template, context)
 
-# def home(request):
-#     return render(request, "home.html")
-
 # class SearchResultsView(ListView):
 #     model = Page
 #     template_name = 'search_results.html'

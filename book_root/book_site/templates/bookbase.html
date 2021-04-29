@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+{% load static %}
+    
+{% block main_content %}
+        {% block content %}
+            <div class="bookcard">
+                <img src="{% static 'yellowsun.jpeg' %}" alt="Half of a Yellow Sun">
+            </div>
+            <h1>Half of a Yellow Sun
+                <i><small>by Chimanmada Adichie</small></i>
+            </h1>
+            <div class="bookinfo">
+                <p>Put info about book in here</p>
+            </div>
+        {% endblock content %}
+<div class="siderow">
+    <div class="col-md-4">
+        <div class="sidecard my-4">
+            <h5 class="sidecard-header">Readers also enjoyed..</h5>
+            <div class="sidecard-body">
+                <div class="siderow">
+                <ul class="list-unstyled mb-0">
+                    <li><a href="#!"><div class="tinycard">
+                        <img src="{% static 'yellowsun.jpeg' %}" alt="Half of a Yellow Sun">
+                    </div></a></li><br>
+                    <li><a href="#!"><div class="tinycard">
+                        <img src="{% static 'yellowsun.jpeg' %}" alt="Half of a Yellow Sun">
+                    </div></a></li><br>
+                    
+                    <li><a href="#!">3. Purple Hibiscus</a></li>
+                </ul>
+                </div>
+            </div>
+        </div>
+        <div class="sidecard my-4">
+            <h5 class="sidecard-header">Browse</h5>
+            <div class="sidecard-body">
+                <div class="siderow">
+                        <ul class="list-unstyled mb-0">
+                            <li><a href="#!">Women's History Month</a></li><br>
+                            <li><a href="#!">Great Books by Black Authors</a></li><br>
+                            <li><a href="#!">Books About Love That Will Make You Melt, Cry, and Feel It All</a></li>
+                        </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock main_content %}
+    
