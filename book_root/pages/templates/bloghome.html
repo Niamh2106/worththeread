@@ -17,7 +17,7 @@
                 <div class="card-body">
                     <h2 class="card-title">Great Books by Black Authors</h2>
                     <p class="card-text">Discover some of the best fiction and nonfiction by contemporary Black authors, including books in every genre from literary fiction to personal memoirs.</p>
-                    <a class="btn btn-primary" href="#!">Read More →</a>
+                    <a class="btn btn-primary" href="{% url 'index' %}blogpost">Read More →</a>
                 </div>
                 <div class="card-footer text-muted">
                     Posted on April 24, 2021 by
@@ -30,7 +30,7 @@
                 <div class="card-body">
                     <h2 class="card-title">Books that are essential reading for Women’s History Month</h2>
                     <p class="card-text">March is Women's History Month, an opportunity to inform ourselves on historic moments for which women struggled and our success so far, as well as to celebrate women as a whole. And what better way to do so than by reading a slew of books written by women about women?</p>
-                    <a class="btn btn-primary" href="#!">Read More →</a>
+                    <a class="btn btn-primary" href="{% url 'index' %}comingsoon">Read More →</a>
                 </div>
                 <div class="card-footer text-muted">
                     Posted on March 21, 2021 by
@@ -63,9 +63,9 @@
                 <div class="card-body">
                     <div class="row">
                             <ul class="list-unstyled mb-0">
-                                <li><a href="#!">Women's History Month</a></li><br>
-                                <li><a href="#!">Great Books by Black Authors</a></li><br>
-                                <li><a href="#!">Books About Love That Will Make You Melt, Cry, and Feel It All</a></li>
+                                <li><a href="{% url 'index' %}comingsoon">Women's History Month</a></li><br>
+                                <li><a href="{% url 'index' %}blogpost">Great Books by Black Authors</a></li><br>
+                                <li><a href="{% url 'index' %}comingsoon">Books About Love That Will Make You Melt, Cry, and Feel It All</a></li>
                             </ul>
                     </div>
                 </div>

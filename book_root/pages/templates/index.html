@@ -1,10 +1,12 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8"/>
     <meta name="description" content="Homepage" />
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+     <!-- Favicon--> 
+    <link rel="icon" type="image/x-icon" href="{% static 'favicon.ico' %}"/>
     <style>
         body, html {
       height: 100%;
@@ -116,12 +118,18 @@
         <div id="myDropdown" class="dropdown-content">
         <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
         <a href="{% url 'index' %}home">Homepage</a>
-        <a href="{% url 'index' %}bloghome">Blog</a>
-        <a href="{% url 'index' %}contact">Contact</a>
-        <a href="{% url 'index' %}blogpost">Great Books by Black Authors</a>
-        <a href="{% url 'index' %}yellowsun">Half of a Yellow Sun</a>
-        <a href="{% url 'index' %}bloodbone">Children of Blood and Bone</a>
-        <a href="https://rb.gy/soyqp4">Bookstores Near Me</a>
+                            <a href="{% url 'index' %}bloghome">Blog</a>
+                            <a href="{% url 'index' %}contact">Contact</a>
+                            <a href="{% url 'index' %}blogpost">Great Books by Black Authors</a>
+                            <a href="{% url 'index' %}yellowsun">Half of a Yellow Sun</a>
+                            <a href="{% url 'index' %}bloodbone">Children of Blood and Bone</a>
+                            <a href="{% url 'index' %}twows">The Wolf of Wall Street</a>
+                            <a href="{% url 'index' %}americanah">Americanah</a>
+                            <a href="{% url 'index' %}hungergames">The Hunger Games</a>
+                            <a href="{% url 'index' %}bornacrime">Born A Crime</a>
+                            <a href="{% url 'index' %}underground">The Underground Railroad</a>
+                            <a href="{% url 'index' %}comingsoon">Books that are essential reading for Women’s History Month</a>
+                            <a href="{% url 'index' %}bloghome">Bookstores near me</a>
       </div>
     </div>
   </div>
