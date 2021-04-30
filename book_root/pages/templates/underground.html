@@ -1,0 +1,22 @@
+{% extends "bookbase.html" %}
+{% load static %}
+
+{% block title %}
+    {{ title }}
+{% endblock title %}
+
+{% block content %}
+<div class="bookcard">
+    <img src="{% static 'ug.jpg' %}" alt="The Underground Railroad">
+</div>
+<h1><b>The Underground Railroad</b>
+    <i><small>by Colson Whitehead</small></i>
+</h1>
+<div class="bookinfo">
+    <p>
+    <br>
+        Cora is a slave on a cotton plantation in Georgia. Life is hell for all the slaves, but especially bad for Cora; an outcast even among her fellow Africans, she is coming into womanhood—where even greater pain awaits. When Caesar, a recent arrival from Virginia, tells her about the Underground Railroad, they decide to take a terrifying risk and escape. Matters do not go as planned—Cora kills a young white boy who tries to capture her. Though they manage to find a station and head north, they are being hunted.
+
+        In Whitehead’s ingenious conception, the Underground Railroad is no mere metaphor—engineers and conductors operate a secret network of tracks and tunnels beneath the Southern soil.</p>
+</div>
+{% endblock content %}

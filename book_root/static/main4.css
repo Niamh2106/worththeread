@@ -283,4 +283,5 @@ a:not([href]):not([class]):hover {
   width: 98px;
   transition: 0.3s;
   overflow:hidden;
+  float:left;
 }

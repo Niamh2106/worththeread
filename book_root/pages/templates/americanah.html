@@ -1,0 +1,19 @@
+{% extends "bookbase.html" %}
+{% load static %}
+
+{% block title %}
+    {{ title }}
+{% endblock title %}
+
+{% block content %}
+<div class="bookcard">
+    <img src="{% static 'Americanah.jpg' %}" alt="Americanah">
+</div>
+<h1><b>Americanah</b>
+    <i><small>by Chimamanda Ngozi Adichie</small></i>
+</h1>
+<div class="bookinfo">
+    <p><b>Americanah is a 2013 novel by the Nigerian author Chimamanda Ngozi Adichie, for which Adichie won the 2013 U.S. National Book Critics Circle Award for fiction.</b><br>
+        <br>Ifemelu and Obinze are young and in love when they depart military-ruled Nigeria for the West. Beautiful, self-assured Ifemelu heads for America, where despite her academic success, she is forced to grapple with what it means to be black for the first time. Quiet, thoughtful Obinze had hoped to join her, but with post-9/11 America closed to him, he instead plunges into a dangerous, undocumented life in London. Fifteen years later, they reunite in a newly democratic Nigeria, and reignite their passion—for each other and for their homeland. </p>
+</div>
+{% endblock content %}

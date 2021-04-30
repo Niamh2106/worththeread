@@ -1,0 +1,19 @@
+{% extends "bookbase.html" %}
+{% load static %}
+
+{% block title %}
+    {{ title }}
+{% endblock title %}
+
+{% block content %}
+<div class="bookcard">
+    <img src="{% static 'bornacrime.jpg' %}" alt="Born a Crime">
+</div>
+<h1><b>Born a Crime</b>
+    <i><small>by Trevor Noah</small></i>
+</h1>
+<div class="bookinfo">
+    <p><b>The memoir of one man’s coming-of-age, set during the twilight of apartheid and the tumultuous days of freedom that followed.</b><br>
+        <br>Born a Crime is the story of a mischievous young boy who grows into a restless young man as he struggles to find himself in a world where he was never supposed to exist. It is also the story of that young man’s relationship with his fearless, rebellious, and fervently religious mother—his teammate, a woman determined to save her son from the cycle of poverty, violence, and abuse that would ultimately threaten her own life. </p>
+</div>
+{% endblock content %}
