@@ -25,4 +25,7 @@ There were 2 views:</p>
 
 <p> It is also important to note that a Bootstrap template from a CDN was used to help with site appearance more specifically
      the entire blog section which consists of the blog home and its respective blog posts. </p>
+<h2> Web Demo </h2>
+<img src="https://j.gifs.com/oZRJVA.gif" alt="pic" />
+
 
