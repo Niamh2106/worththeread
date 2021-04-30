@@ -43,7 +43,7 @@
                 <div class="card-body">
                     <h2 class="card-title">Books About Love That Will Make You Melt, Cry, and Feel It All</h2>
                     <p class="card-text">It's funny how we always tell each other that happy endings in romance only happen in fairytales. The reality is that most love stories aren't particularly happy. Yes, they represent seduction, desire, and romance, but they still confront us with the ugly things that emerge in the absence and outcome of love.</p>
-                    <a class="btn btn-primary" href="#!">Read More →</a>
+                    <a class="btn btn-primary" href="{% url 'index' %}comingsoon">Read More →</a>
                 </div>
                 <div class="card-footer text-muted">
                     Posted on February 14, 2021 by
@@ -56,20 +56,8 @@
                 <li class="page-item disabled"><a class="page-link" href="#!">Newer →</a></li>
             </ul>
         </div>
-        <!-- Side widgets-->
-        <!-- <div class="col-md-4"> -->
-            <!-- Search widget-->
-            <!-- <div class="card my-4">
-                <h5 class="card-header">Search</h5>
-                <div class="card-body">
-                    <div class="input-group">
-                        <input class="form-control" type="text" placeholder="Search for..." />
-                        <span class="input-group-append"><button class="btn btn-secondary" type="button">Go!</button></span>
-                    </div>
-                </div>
-            </div> -->
         <div class="col-md-4">
-            <!-- Categories widget-->
+           <!-- Categories widget-->
             <div class="card my-4">
                 <h5 class="card-header">Browse</h5>
                 <div class="card-body">
@@ -88,9 +76,9 @@
                 <div class="card-body">
                     <div class="row">
                     <ol class="topthree">
-                        <li><a href="">1. Children of Blood and Bone</a></li><br>
-                        <li><a href="#!">2. Half of a Yellow Sun</a></li><br>
-                        <li><a href="#!">3. Purple Hibiscus</a></li>
+                        <li><a href="{% url 'index' %}bloodbone">1. Children of Blood and Bone</a></li><br>
+                        <li><a href="{% url 'index' %}yellowsun">2. Half of a Yellow Sun</a></li><br>
+                        <li><a href="{% url 'index' %}twows">3. The Wolf of Wall Street</a></li>
                     </ol>
                     </div>
                 </div>
@@ -99,7 +87,7 @@
                 <h5 class="card-header">Find Nearest Bookstore</h5>
                 <div class="card-body"><div class="gmap"id="gmap"><iframe width="310" height="350" id="gmap_canvas" src="https://maps.google.com/maps?q=bookshops%20near%20dublin%20city%20centre&t=&z=11&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div><style>.gmap{resize: both;overflow: auto;}</style></div>
             </div>
-        </div>
+        </div> 
     </div>
 </div>
 <!-- Footer-->

@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+    {{ title }}
+{% endblock title %}
+
+{% block main_content %}
+<style>
+    
+    .middle {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+    
+    hr {
+      margin: auto;
+      width: 40%;
+    }
+    </style>
+    <body>
+    
+    <div class="bgimg">
+      <div class="middle">
+        <h1>UNDER CONSTRUCTION</h1>
+        <hr>
+        <p>Sorry for the dust! We know it’s taking a while but sit tight and we’ll be with you soon.
+
+            <br>You’ll be able to view this blogpost by June 1st. 
+            
+            <br>In the meantime, check out the rest of our website</p>
+      </div>
+      </div>
+    </div>
+    
+    </body>
+{% endblock main_content %}
