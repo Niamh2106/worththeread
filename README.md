@@ -26,4 +26,4 @@ There were 2 views:</p>
      the entire blog section which consists of the blog home and its respective blog posts. </p>
 <h2> Web Demo </h2>
 <img src="https://j.gifs.com/oZRJVA.gif" alt="pic" />
-<p> link to  Web Demo:</p><a href=" https://niamh2106.github.io/worththeread/#web-demo">Web Demo</a>
+<p> link to  Web Demo:<a href="https://niamh2106.github.io/worththeread/#web-demo">Web Demo</a></p>
