@@ -1,0 +1,19 @@
+{% extends "bookbase.html" %}
+{% load static %}
+
+{% block title %}
+    {{ title }}
+{% endblock title %}
+
+{% block content %}
+<div class="bookcard">
+    <img src="{% static 'twows.jpg' %}" alt="The Wolf of Wall Street">
+</div>
+<h1><b>The Wolf of Wall Street</b>
+    <i><small>by Jordan Belfort</small></i>
+</h1>
+<div class="bookinfo">
+    <p>By day he made thousands of dollars a minute. By night he spent it as fast as he could, on drugs, sex, and international globe-trotting. From the binge that sank a 170-foot motor yacht and ran up a $700,000 hotel tab, to the wife and kids waiting at home, and the fast-talking, hard-partying young stockbrokers who called him king and did his bidding, here, in his own inimitable words, is the story of the ill-fated genius they called . . .
+    </p><p style="text-align:center;font-weight: bold;">THE WOLF OF WALL STREET</p>
+</div>
+{% endblock content %}

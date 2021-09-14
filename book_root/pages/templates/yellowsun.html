@@ -1,0 +1,21 @@
+{% extends "bookbase.html" %}
+{% load static %}
+
+{% block title %}
+    {{ title }}
+{% endblock title %}
+
+{% block content %}
+<div class="bookcard">
+    <img src="{% static 'yellowsun.jpeg' %}" alt="Half of a Yellow Sun">
+</div>
+<h1><b>Half of a Yellow Sun</b>
+    <i><small>by Chimamanda Ngozi Adichie</small></i>
+</h1>
+<div class="bookinfo">
+    <p>
+     <b>Half of a Yellow Sun re-creates a seminal moment in modern African history: Biafra’s impassioned struggle to establish an independent republic in Nigeria in the 1960s, and the chilling violence that followed.</b><br>
+     <br>Thirteen-year-old Ugwu is employed as a houseboy for a university professor full of revolutionary zeal. Olanna is the professor’s beautiful mistress, who has abandoned her life of privilege in Lagos for a dusty university town and the charisma of her new lover. And Richard is a shy young Englishman in thrall to Olanna’s twin sister, an enigmatic figure who refuses to belong to anyone. As Nigerian troops advance and the three must run for their lives, their ideals are severely tested, as are their loyalties to one another.
+    </p>
+</div>
+{% endblock content %}

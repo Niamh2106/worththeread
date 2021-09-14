@@ -1,0 +1,102 @@
+{% extends "blogbase.html" %}
+{% load static %}
+
+
+{% block main_content %}
+<div class="container">
+    <div class="row">
+        <!-- Blog entries-->
+        <div class="col-md-8">
+            <h1 class="my-4">
+               Blog Homepage
+                <small></small>
+            </h1>
+            <!-- Blog post-->
+            <div class="card mb-4">
+                <img class="card-img-top" src="{% static 'BlackAuthors.jpg' %}" alt="Card image cap"width="750" height="350" />
+                <div class="card-body">
+                    <h2 class="card-title">Great Books by Black Authors</h2>
+                    <p class="card-text">Discover some of the best fiction and nonfiction by contemporary Black authors, including books in every genre from literary fiction to personal memoirs.</p>
+                    <a class="btn btn-primary" href="{% url 'index' %}blogpost">Read More →</a>
+                </div>
+                <div class="card-footer text-muted">
+                    Posted on April 24, 2021 by
+                    <a href="https://gitlab.computing.dcu.ie/idehenn2">Niamh Idehen</a>
+                </div>
+            </div>
+            <!-- Blog post-->
+            <div class="card mb-4">
+                <img class="card-img-top" src="{% static 'femaleauthors.jpg' %}" alt="Card image cap" width="750" height="350"/>
+                <div class="card-body">
+                    <h2 class="card-title">Books that are essential reading for Women’s History Month</h2>
+                    <p class="card-text">March is Women's History Month, an opportunity to inform ourselves on historic moments for which women struggled and our success so far, as well as to celebrate women as a whole. And what better way to do so than by reading a slew of books written by women about women?</p>
+                    <a class="btn btn-primary" href="{% url 'index' %}comingsoon">Read More →</a>
+                </div>
+                <div class="card-footer text-muted">
+                    Posted on March 21, 2021 by
+                    <a href="#!">Niamh Idehen</a>
+                </div>
+            </div>
+            <!-- Blog post-->
+            <div class="card mb-4">
+                <img class="card-img-top" src="{% static 'lovebooks.jpg' %}" alt="Books" width="750" height="350"/>
+                <div class="card-body">
+                    <h2 class="card-title">Books About Love That Will Make You Melt, Cry, and Feel It All</h2>
+                    <p class="card-text">It's funny how we always tell each other that happy endings in romance only happen in fairytales. The reality is that most love stories aren't particularly happy. Yes, they represent seduction, desire, and romance, but they still confront us with the ugly things that emerge in the absence and outcome of love.</p>
+                    <a class="btn btn-primary" href="{% url 'index' %}comingsoon">Read More →</a>
+                </div>
+                <div class="card-footer text-muted">
+                    Posted on February 14, 2021 by
+                    <a href="#!">Niamh Idehen</a>
+                </div>
+            </div>
+            <!-- Pagination-->
+            <ul class="pagination justify-content-center mb-4">
+                <li class="page-item disabled"><a class="page-link" href="#!">← Older</a></li>
+                <li class="page-item disabled"><a class="page-link" href="#!">Newer →</a></li>
+            </ul>
+        </div>
+        <div class="col-md-4">
+           <!-- Categories widget-->
+            <div class="card my-4">
+                <h5 class="card-header">Browse</h5>
+                <div class="card-body">
+                    <div class="row">
+                            <ul class="list-unstyled mb-0">
+                                <li><a href="{% url 'index' %}comingsoon">Women's History Month</a></li><br>
+                                <li><a href="{% url 'index' %}blogpost">Great Books by Black Authors</a></li><br>
+                                <li><a href="{% url 'index' %}comingsoon">Books About Love That Will Make You Melt, Cry, and Feel It All</a></li>
+                            </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- Side widget-->
+            <div class="card my-4">
+                <h5 class="card-header">Our Top Three Books<br> (April Edition)</h5>
+                <div class="card-body">
+                    <div class="row">
+                    <ol class="topthree">
+                        <li><a href="{% url 'index' %}bloodbone">1. Children of Blood and Bone</a></li><br>
+                        <li><a href="{% url 'index' %}yellowsun">2. Half of a Yellow Sun</a></li><br>
+                        <li><a href="{% url 'index' %}twows">3. The Wolf of Wall Street</a></li>
+                    </ol>
+                    </div>
+                </div>
+            </div>
+            <div class="card my-4">
+                <h5 class="card-header">Find Nearest Bookstore</h5>
+                <div class="card-body"><div class="gmap"id="gmap"><iframe width="310" height="350" id="gmap_canvas" src="https://maps.google.com/maps?q=bookshops%20near%20dublin%20city%20centre&t=&z=11&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div><style>.gmap{resize: both;overflow: auto;}</style></div>
+            </div>
+        </div> 
+    </div>
+</div>
+<!-- Footer-->
+<footer class="py-5">
+    <div class="container"><p class="m-0 text-center text-white">Copyright &copy; Niamh Idehen 2021</p></div>
+</footer>
+<!-- Bootstrap core JS-->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Core theme JS-->
+<script src="js/scripts.js"></script>
+{% endblock main_content %}

@@ -1,0 +1,22 @@
+{% extends "bookbase.html" %}
+{% load static %}
+
+{% block title %}
+    {{ title }}
+{% endblock title %}
+
+{% block content %}
+<div class="bookcard">
+    <img src="{% static 'hungergames.jpg' %}" alt="The Hunger Games">
+</div>
+<h1><b>The Hunger Games</b>
+    <i><small>by Suzanne Collins</small></i>
+</h1>
+<div class="bookinfo">
+    <p><b>Could you survive on your own in the wild, with every one out to make sure you don't live to see the morning?</b><br>
+
+        <br>In the ruins of a place once known as North America lies the nation of Panem, a shining Capitol surrounded by twelve outlying districts. The Capitol is harsh and cruel and keeps the districts in line by forcing them all to send one boy and one girl between the ages of twelve and eighteen to participate in the annual Hunger Games, a fight to the death on live TV.
+        
+        Sixteen-year-old Katniss Everdeen, who lives alone with her mother and younger sister, regards it as a death sentence when she steps forward to take her sister's place in the Games. But Katniss has been close to dead before—and survival, for her, is second nature. </p>
+</div>
+{% endblock content %}

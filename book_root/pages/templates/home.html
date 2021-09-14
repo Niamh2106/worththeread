@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+    {{ title }}
+{% endblock title %}
+
+
+{% block main_content %}
+ <div class="card">
+    <a href="{% url 'index' %}yellowsun">
+      <img src="{% static 'yellowsun.jpeg' %}" alt="Half of a Yellow Sun">
+    </a>
+  </div>
+  <div class="card">
+    <a href="{% url 'index' %}bloodbone">
+      <img src="{% static 'bloodbone.jpg' %}" alt="Children of Blood and Bone">
+    </a>
+  </div>
+  <div class="card">
+    <a href="{% url 'index' %}americanah">
+      <img src="{% static 'Americanah.jpg' %}" alt="Americanah">
+    </a>
+  </div>
+  <div class="card">
+    <a href="{% url 'index' %}twows">
+      <img src="{% static 'twows.jpg' %}" alt="The Wolf of Wall Street">
+    </a>
+  </div>
+  <div class="card">
+    <a href="{% url 'index' %}bornacrime">
+      <img src="{% static 'bornacrime.jpg' %}" alt="Born a Crime">
+    </a>
+  </div>
+  <div class="card">
+    <a href="{% url 'index' %}hungergames">
+      <img src="{% static 'hungergames.jpg' %}" alt="The Hunger Games">
+    </a>
+  </div>
+  <div class="card">
+    <a href="{% url 'index' %}underground">
+      <img src="{% static 'ug.jpg' %}" alt="The Underground Railroad">
+    </a>
+  </div>
+<!-- Footer-->
+<!-- <footer class="py-5">
+  <div class="container"><p class="m-0 text-center text-white">Copyright &copy; Niamh Idehen 2021</p></div>
+</footer> -->
+{% endblock main_content %}

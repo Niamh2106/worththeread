@@ -1,0 +1,130 @@
+{% extends "blogbase.html" %}
+{% load static %}
+
+{% block title %}
+    {{ title }}
+{% endblock title %}
+
+<!-- The blog post write up is sourced from https://reedsy.com/discovery/blog/black-authors -->
+
+{% block main_content %}
+<div class="container">
+    <div class="row">
+        <!-- Post content-->
+        <div class="col-lg-8">
+            <!-- Title-->
+            <h1 class="mt-4">Great Books by Black Authors</h1>
+            <!-- Author-->
+            <p class="lead">
+                by
+                <a href="#!">Niamh Idehen</a>
+            </p>
+            <hr />
+            <!-- Date and time-->
+            <p>Posted on April 24, 2021 at 12:00 PM</p>
+            <hr />
+            <!-- Preview image-->
+            <img class="img-fluid rounded" src="{% static 'BlackAuthors.jpg' %}" alt="Great Books by Black Authors" />
+            <hr />
+            <!-- Post content-->
+            <p class="lead">The re-energized efforts of the Black Lives Matter movement in 2020 shone a light on many corners of Black culture. For lots of readers, this moment provided fresh inspiration to seek out new Black authors and to explore the rich variety of Black literature, whose stories span both borders and generations, illuminating a huge variety of experiences.</p>
+            <p>From 20th century classics that crystallized pivotal moments in the fight for civil rights, to hilarious novels, gripping fantasy, and 2020 bestsellers that continue to navigate complex social tensions — we’ve gathered together seventy of the best books by Black authors that belong on your ‘TBR’.</p>
+            <p>Our hand-picked list includes several famous black authors you might recognize — Toni Morrison, Ralph Ellison, James Baldwin — as well as some of the most promising up-and-coming names. Within our ‘Fiction’ section, you’ll find Black voices represented in a huge range of genres; and we’ve devoted additional sections to nonfiction, poetry, and Young Adult fiction (we know how important it is for young people to be represented in the books they read). So let’s dive in!</p>
+            <blockquote class="blockquote">
+                <p class="mb-0">“If there’s a book that you want to read, but it hasn’t been written yet, then you must write it.”</p>
+                <footer class="blockquote-footer">
+                    Toni Morrison
+                    <cite title="Source Title">(African-American novelist and professor)</cite>
+                </footer>
+            </blockquote>
+            <img src="{% static 'bloodbone.jpg' %}" alt="Card image cap"width="340" height="320"class="center">
+            <h2>1. Children of Blood and Bone by Tomi Adeyemi </h2>
+            <p>Tomi Adeyemi’s debut fantasy novel features a set of richly drawn characters, and blends Nigerian Yoruba mythology with established tropes and elements of fantasy. The protagonist, Zélie Adebola, is fighting to restore magic to the land of Orïsha, after the king ordered all the magicians killed. Epic high fantasy worldbuilding (complete with snow leopards), meets intelligent analysis of social power, racial tensions, and prejudice, in a debut that grips readers from page one. The good news? This is the first in a fantasy series, so there’s plenty more to read...</p>
+            <br>
+            <img src="{% static 'Americanah.jpg' %}" alt="Card image cap"width="340" height="320"class="center">
+            <h2>2. Americanah by Chimamanda Ngozi Adichie </h2>
+            <p>Americanah follows two Nigerian characters, Ifemelu and Obinze, teenagers in love who drift apart when Ifemelu moves to America. This novel wears its politics on its sleeve, acutely describing how it feels to try and navigate multiple cultures — a feeling that is endemic to being an immigrant — and openly debating the lived experiences of Black people, American or not. This discussion is at its most overt in Ifemelu’s blog posts, scattered throughout the novel. The overt nature of the politics does not come at the cost of plot of characterization, however, and Adichie writes with sagacious humor.</p>
+            <br>
+            <img src="{% static 'ug.jpg' %}" alt="Card image cap"width="340" height="320"class="center">
+            <h2>3. The Underground Railroad by Colson Whitehead </h2>
+            <p>Cora is a slave on a plantation in Georgia. An outcast among her fellow Africans and quickly approaching womanhood, she’s desperate for freedom. So, when Caesar tells her about an underground railroad, they decide to escape North, only to be pursued by a relentless slave-master. Whitehead’s novel is a pulsating story about a woman's ferocious will to escape the horrors of bondage. But, it’s also a powerful meditation on history, from the brutal importation of Africans to the unfulfilled promises of the present day. A winner of the Pulitzer Prize and National Book Award, The Underground Railroad is a tour de force.</p>
+            <br>
+            <hr />
+            <!-- Comments form-->
+            <div class="card my-4">
+                <h5 class="card-header">Leave a Comment:</h5>
+                <div class="card-body">
+                    <form>
+                        <div class="form-group"><textarea class="form-control" rows="3"></textarea></div>
+                        <button class="btn btn-primary" type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+            <!-- Single comment-->
+            <div class="media mb-4">
+                <img class="d-flex mr-3 rounded-circle" src="https://media.istockphoto.com/photos/close-up-portrait-of-brunette-woman-picture-id1154642632?k=6&m=1154642632&s=612x612&w=0&h=YTiNxRGupHJpMqQRu7Xh-U976mur5fp-cM_WEczpx04=" alt="..." width=50 height=50 />
+                <div class="media-body">
+                    <h5 class="mt-0">Jane Smith</h5>
+                    Will definitely be purchasing some of the books listed.
+                </div>
+            </div>
+            <!-- Comment with nested comments-->
+            <div class="media mb-4">
+                <img class="d-flex mr-3 rounded-circle" src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="..." width=50 height=50 />
+                <div class="media-body">
+                    <h5 class="mt-0">John Doe</h5>
+                       I personally loved Children of Blood and Bone by Tomi Adeyemi.
+                    <div class="media mt-4">
+                        <img class="d-flex mr-3 rounded-circle" src="https://media.istockphoto.com/photos/close-up-portrait-of-brunette-woman-picture-id1154642632?k=6&m=1154642632&s=612x612&w=0&h=YTiNxRGupHJpMqQRu7Xh-U976mur5fp-cM_WEczpx04=" alt="..." width=50 height=50 />
+                        <div class="media-body">
+                            <h5 class="mt-0">Jane Smith</h5>
+                             Same
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <!-- Categories widget-->
+             <div class="card my-4">
+                 <h5 class="card-header">Browse</h5>
+                 <div class="card-body">
+                     <div class="row">
+                             <ul class="list-unstyled mb-0">
+                                 <li><a href="{% url 'index' %}comingsoon">Women's History Month</a></li><br>
+                                 <li><a href="{% url 'index' %}blogpost">Great Books by Black Authors</a></li><br>
+                                 <li><a href="{% url 'index' %}comingsoon">Books About Love That Will Make You Melt, Cry, and Feel It All</a></li>
+                             </ul>
+                     </div>
+                 </div>
+             </div>
+             <!-- Side widget-->
+             <div class="card my-4">
+                 <h5 class="card-header">Our Top Three Books<br> (April Edition)</h5>
+                 <div class="card-body">
+                     <div class="row">
+                     <ol class="topthree">
+                         <li><a href="{% url 'index' %}bloodbone">1. Children of Blood and Bone</a></li><br>
+                         <li><a href="{% url 'index' %}yellowsun">2. Half of a Yellow Sun</a></li><br>
+                         <li><a href="{% url 'index' %}twows">3. The Wolf of Wall Street</a></li>
+                     </ol>
+                     </div>
+                 </div>
+             </div>
+             <div class="card my-4">
+                 <h5 class="card-header">Find Nearest Bookstore</h5>
+                 <div class="card-body"><div class="gmap"id="gmap"><iframe width="310" height="350" id="gmap_canvas" src="https://maps.google.com/maps?q=bookshops%20near%20dublin%20city%20centre&t=&z=11&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div><style>.gmap{resize: both;overflow: auto;}</style></div>
+             </div>
+         </div>
+    </div>
+</div>
+ <!-- Footer-->
+ <footer class="py-5">
+    <div class="container"><p class="m-0 text-center text-white">Copyright &copy; Niamh Idehen 2021</p></div>
+</footer>
+<!-- Bootstrap core JS-->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Core theme JS-->
+<script src="js/scripts.js"></script>
+{% endblock main_content %}
